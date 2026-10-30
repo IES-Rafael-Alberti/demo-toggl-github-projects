@@ -81,6 +81,7 @@ El estado del Project **no cambia** al detener el temporizador. La entrada de To
 
 | Síntoma | Comprobación / solución |
 |---|---|
+| Estoy buscando una opción para conectar Toggl a todo el Project | No hay una conexión directa de Toggl con el tablero ni sincronización de sus estados. El Project contiene el issue; abre el issue real del repositorio y registra tiempo sobre ese issue. |
 | No aparece el botón de Toggl | Verifica sesión, GitHub habilitado en Integrations y permiso de la extensión para ejecutarse en `github.com`; recarga el issue y prueba en un navegador/perfil compatible. Usa el plan B manual si sigue sin aparecer. |
 | La tarjeta no tiene número ni URL `/issues/N` | Probablemente es un borrador. Conviértelo en issue y vuelve a abrirlo desde el repositorio. |
 | El botón inicia con otro proyecto o descripción | Corrige esos campos antes de guardar y verifica la entrada al terminar. |
