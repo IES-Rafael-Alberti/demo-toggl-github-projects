@@ -10,8 +10,8 @@
 
 | Servicio | Objeto de esta práctica | Qué hace |
 |---|---|---|
-| GitHub, repositorio | Issue `#1` (o el número que tenga en la URL) | Describe el trabajo y conserva discusión y criterios de aceptación. |
-| GitHub Projects | Tarjeta que apunta al issue | Permite ordenar y actualizar el estado del trabajo. |
+| GitHub, repositorio | [Issue #1](https://github.com/IES-Rafael-Alberti/demo-toggl-github-projects/issues/1) | Describe el trabajo y conserva discusión y criterios de aceptación. |
+| GitHub Projects | [Tarjeta del issue en el Project v2](https://github.com/orgs/IES-Rafael-Alberti/projects/272) | Permite ordenar y actualizar el estado del trabajo. |
 | Toggl Track | Proyecto de Toggl y entrada de tiempo | Registra cuánto tiempo dedica una persona a la tarea. |
 
 Aunque el repositorio y el Project estén vinculados, el **proyecto de Toggl es otro objeto**. Nombrar igual el Project y el proyecto de Toggl no sincroniza sus campos.
@@ -25,9 +25,9 @@ Aunque el repositorio y el Project estén vinculados, el **proyecto de Toggl es 
 
 ## Paso 1. Comprueba que la tarjeta es un issue real
 
-1. Abre el [Project de demostración](https://github.com/orgs/IES-Rafael-Alberti/projects/REEMPLAZAR).
+1. Abre el [Project v2 de demostración](https://github.com/orgs/IES-Rafael-Alberti/projects/272).
 2. Abre la tarjeta **Preparar una ficha de ayuda para conectar Toggl con un issue**.
-3. Comprueba que muestra un enlace a un issue del repositorio. La dirección debe terminar en `/issues/NÚMERO`.
+3. Comprueba que muestra un enlace al issue **#1** del repositorio. La dirección debe terminar en `/issues/1`.
 4. Abre ese enlace para llegar a la página del issue.
 
 **Si la tarjeta es un borrador:** un borrador pertenece únicamente al Project; todavía no es un issue del repositorio y no tiene URL `/issues/NÚMERO`. Usa el menú de la tarjeta para convertirlo en issue y selecciona este repositorio. Después abre el issue creado.
@@ -39,7 +39,8 @@ Aunque el repositorio y el Project estén vinculados, el **proyecto de Toggl es 
 1. Abre la extensión de Toggl Track.
 2. Entra en su configuración y busca **Integrations**.
 3. Comprueba que **GitHub** está habilitado. Los nombres exactos pueden variar ligeramente con la versión o el idioma.
-4. Vuelve a la página del issue y recárgala si la tenías abierta.
+4. En la configuración del navegador, comprueba que la extensión puede ejecutarse en `github.com`. Si el navegador limita el acceso a sitios, autoriza GitHub para la extensión de Toggl; no es necesario habilitarla en todos los sitios.
+5. Vuelve a la página del issue y recárgala si la tenías abierta.
 
 ## Paso 3. Inicia el temporizador desde GitHub
 
@@ -51,10 +52,10 @@ Aunque el repositorio y el Project estén vinculados, el **proyecto de Toggl es 
 Si la descripción automática no identifica bien la tarea, usa este formato:
 
 ```text
-IES-Rafael-Alberti/demo-toggl-github-projects#N | revisar criterios del issue | URL_DEL_ISSUE
+IES-Rafael-Alberti/demo-toggl-github-projects#1 | comprobar integración Toggl | https://github.com/IES-Rafael-Alberti/demo-toggl-github-projects/issues/1
 ```
 
-El `#N` se sustituye por el número real que aparece en la URL del issue.
+El identificador `#1` debe coincidir con el número real del issue abierto.
 
 ## Paso 4. Plan B: iniciar el registro manualmente
 
@@ -80,7 +81,7 @@ El estado del Project **no cambia** al detener el temporizador. La entrada de To
 
 | Síntoma | Comprobación / solución |
 |---|---|
-| No aparece el botón de Toggl | Verifica sesión y GitHub habilitado en Integrations, recarga el issue y prueba en un navegador/perfil compatible. Usa el plan B manual si sigue sin aparecer. |
+| No aparece el botón de Toggl | Verifica sesión, GitHub habilitado en Integrations y permiso de la extensión para ejecutarse en `github.com`; recarga el issue y prueba en un navegador/perfil compatible. Usa el plan B manual si sigue sin aparecer. |
 | La tarjeta no tiene número ni URL `/issues/N` | Probablemente es un borrador. Conviértelo en issue y vuelve a abrirlo desde el repositorio. |
 | El botón inicia con otro proyecto o descripción | Corrige esos campos antes de guardar y verifica la entrada al terminar. |
 | Toggl registra tiempo pero la tarjeta no cambia | Es el comportamiento esperado: actualiza el estado del Project por separado. |
